@@ -40,3 +40,13 @@
         position: relative;
     }    
 
+/* Styles for responsive images */
+
+    .dynamicImage {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .foot-padding {
+        padding-bottom: 70px;
+    }

@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./jquery.matchHeight.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  
+      
     <!--Style required for carousel slide animation-->
     <style>
         .carousel-inner > .item > img,
@@ -28,18 +29,23 @@
             $(window).resize(function(){
                 adjustTop();
             });
+
         });
 
         function adjustTop() {
                 var height = $('.main-nav').height();
                 $('.main-wrapper').css({'top' : height + 'px'});
         }    
+
     </script>
+
 
 </head>
 
 <body>
     <!-- Page Title and Navigation Bar -->
+    <a name="top"></a>
+    
     <div>
         <nav class="navigation navbar navbar-default main-nav navbar-inverse" role="navigation">
 
@@ -53,35 +59,38 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Meet the Mighty Five</a>
+                <a class="navbar-brand" href="index.html">Meet the Mighty Five</a>
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+                    <li class="active"><a href="index.html">Home <span class="sr-only">(current)</span></a></li>
                     <!-- <li><a href="#">Link</a></li> -->
                     <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Choose a Composer <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Modest Mussorgsky</a></li>
-                        <li><a href="#">Alexander Borodin</a></li>
-                        <li><a href="#">Nikolai Rimsky-Korsakov</a></li>
-                        <li><a href="#">Mily Balakirev</a></li>
-                        <li><a href="#">César Cui</a></li>
+                        <li><a href="Mussorgsky.html">Modest Mussorgsky</a></li>
+                        <li><a href="Borodin.html">Alexander Borodin</a></li>
+                        <li><a href="RimskyKorsakov.html">Nikolai Rimsky-Korsakov</a></li>
+                        <li><a href="Balakirev.html">Mily Balakirev</a></li>
+                        <li><a href="Cui.html">César Cui</a></li>
                     </ul>
                     </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">About</a></li>
+                    <li><a href="About.html">About</a></li>
                 </ul>
                 </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->
         </nav>
     </div>
 
+    <div class="row">
     <section class="main-wrapper">
-        <h1 class="text-center">Meet the Mighty Five</h1>
+        <div class="col-md-12">
+            <h1 class="text-center">Meet the Mighty Five</h1>
+        </div>
     <!-- Carousel Encoding -->
         <div class="container col-md-6 col-md-offset-3">
         <br>
@@ -99,7 +108,7 @@
         <div class="carousel-inner" role="listbox">
 
         <div class="item active">
-            <img src="assets/images/ryan-holloway-168925.jpg" alt="Piano image by Ryan Holloway" width="460" height="345">
+            <a href="Mussorgsky.html"><img src="assets/images/ryan-holloway-168925.jpg" alt="Piano image by Ryan Holloway" width="460" height="345"></a>
             <div class="carousel-caption">
             <h2>Modest Mussorgsky</h2>
             <h4>1839-1881</h4>
@@ -107,7 +116,7 @@
         </div>
 
         <div class="item">
-            <img src="assets/images/cole-hutson-51687.jpg" alt="Cello image by Cole Hutson" width="460" height="345">
+            <a href="Borodin.html"><img src="assets/images/cole-hutson-51687.jpg" alt="Cello image by Cole Hutson" width="460" height="345"></a>
             <div class="carousel-caption">
             <h2>Alexander Borodin</h2>
             <h4>1833-1887</h4>
@@ -115,7 +124,7 @@
         </div>
         
         <div class="item">
-            <img src="assets/images/providence-doucet-81314.jpg" alt="Violin image by Providence Doucet" width="460" height="345">
+            <a href="RimskyKorsakov.html"><img src="assets/images/providence-doucet-81314.jpg" alt="Violin image by Providence Doucet" width="460" height="345"></a>
             <div class="carousel-caption">
             <h2>Nikolai Rimsky-Korsakov</h2>
             <h4>1844-1908</h4>
@@ -123,7 +132,7 @@
         </div>
 
         <div class="item">
-            <img src="assets/images/larisa-birta-102093.jpg" alt="Violinists image by Larisa Birta" width="460" height="345">
+            <a href="Balakirev.html"><img src="assets/images/larisa-birta-102093.jpg" alt="Violinists image by Larisa Birta" width="460" height="345"></a>
             <div class="carousel-caption">
             <h2>Mily Balakirev</h2>
             <h4>1837-1910</h4>
@@ -131,7 +140,7 @@
         </div>
     
         <div class="item">
-            <img src="assets/images/dayne-topkin-60559.jpg" alt="Composition image by Dayne Topkin" width="460" height="345">
+            <a href="Cui.html"><img src="assets/images/dayne-topkin-60559.jpg" alt="Composition image by Dayne Topkin" width="460" height="345"></a>
             <div class="carousel-caption">
             <h2 class="blackFont">César Cui</h2>
             <h4 class="blackFont">1835-1918</h4>
@@ -152,7 +161,109 @@
         </div>
         </div>
     </section><!--Section for Wrapper and Carousel -->
+    </div>
 
+    <div class="row main-wrapper">
+        <div class="col-md-10 col-md-offset-1">
+            <h3 class="text-center">Who were the Mighty Five?</h3>
+        </div>
+    </div>
+    <div class="row main-wrapper">
+        <div class="col-md-10 col-md-offset-1">
+            <p>The Mighty Five, also known as The Mighty Handful or The Kuchka, are the five composers and music critics credited with creating the Russian sound in classical music: </p>
+            <ul>
+                <li>Modest Mussorgsky (1839-1881)</li>
+                <li>Alexander Borodin (1833-1887)</li>
+                <li>Nikolai Rimsky-Korsakov (1844-1908)</li>
+                <li>Mily Balakirev (1837-1910)</li>
+                <li>César Cui (1835-1918)</li>
+            </ul>                
+            <p>The artists were self-trained musicians, working day jobs ranging from chemist to naval officer. The group collaborated from 1856 to 1870.</p>
+        </div>
+    </div>  
+
+    <div class="row main-wrapper">    
+        <div class="col-md-10 col-md-offset-1">
+            <h3 class="text-center"> Origins </h3>
+        </div>
+    </div>
+
+    <div class="row main-wrapper">
+        <div class="col-md-7 col-md-offset-1">
+            <h4>Mikhail Glinka (1804-1857)</h4>
+            <p>Composers such as Mikhail Glinka paved the way for the Mighty Five to explore Russian themes in classical music.</p>
+            <p>Glinka is best known for his two operas, <i>A Life for the Tsar</i> (1836) and <i>Ruslan and Liudmila</i> (1842). <i> A Life for the Tsar</i> tells the story of Ivan Susanin, a Russian patriotic hero. The musical style of the work mirrors the opera style popular in Italy at the time, rather than highlighting Russian themes, but the work earned Glinka a positive reception both with the tsar and with the public.</p>
+            <p>Glinka began to introduce Russian musical themes in his second opera, <i>Ruslan and Liudmila</i>, based on a story by Alexander Pushkin. Included within what is still a largely Italian style, listeners heard new constructs such as the whole-tone scale and Russian folk themes.</p>
+            <p><a href="https://youtu.be/Nyx99YcHdIQ">Click here</a> to hear Glinka's use of the whole-tone scale in the Overture to <i>Ruslan and Liudmila</i>.</p>
+            <p><a href="https://youtu.be/vA2899pyrbo">Click here</a> to hear the <i>Oriental Dances</i>, an example of the Russian musical style that Glinka introduced in <i>Ruslan and Liudmila</i>.</p>
+        </div>
+        <div class="col-md-3">
+            <p class="text-center"><a href="https://commons.wikimedia.org/wiki/File:Michael_Glinka.jpg#/media/File:Michael_Glinka.jpg"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/Michael_Glinka.jpg" class="img-fluid dynamicImage img-thumbnail" alt="Michael Glinka.jpg" ></a><br><small>By unknown, upload by <a href="//commons.wikimedia.org/wiki/User:Parpan05" title="User:Parpan05">Adrian Michael</a> - Die berühmten Musiker Kunstverlag Lucien Mazenod, Genf 1946, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=10599861">Link</small></a></p> 
+        </div>
+    </div>
+
+    <div class="row main-wrapper">    
+        <div class="col-md-10 col-md-offset-1">
+            <h3 class="text-center">What defines the Russian sound?</h3>
+        </div>
+    </div>
+
+    <div class="row main-wrapper">
+        <div class="col-md-10 col-md-offset-1">
+            <p>Two broad themes define the Russian sound of the Mighty Five:</p>
+        </div>
+    </div>
+
+    <div class="row main-wrapper">
+        <div class="col-md-5 col-md-offset-1">
+            <h4>Music of the Villages</h4>
+            <p>The composers employed several techniques to capture the village and peasant songs of the Russian people. Several musical techniques characterized this approach:</p>
+            <ul>
+                <li><b>Tonal mutability:</b> the movement of a melody from one tonal center to another, usually across keys.</li>
+                <li><b>Heterophony:</b> two or more performers render a melody simultaneously with variation. The melody later converges to a single line.</li>
+                <li><b>Parallel intervals:</b> the use of fifth, fourth, or third intervals in a melody.</li>
+            </ul>
+        </div>
+
+        <div class="col-md-5">
+            <h4>Harmonic Devices</h4>
+            <p>The Mighty Five also employed harmonic devices not characteristic of Russian church or folk music to distinguish their style from Western music:</p>
+            <ul>
+                <li><b>Whole tone scale:</b> a device introduced by Glinka, usually to indicate an ominous tone.</li>
+                <li><b>Russian submediant:</b> a specific style of chord structure and chord progression.</li>
+                <li><b>Diminished or octactonic scale:</b> a scale popularized by Rimsky-Korsakov that other composers later borrowed.</li>
+                <li><b>Modular rotation in a sequence of thirds:</b> a loose tone poem structure that the composers adopted from Franz List.</li>
+                <li><b>Pentatonic scale:</b> a scale with only five notes in the octave, rather than the traditional seven.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="row main-wrapper">
+        <div class="col-md-10 col-md-offset-1">
+            <h4>Orientalism</h4>
+            <p>The Mighty Five composers also employed <i>Orientalism</i>, the use of Eastern melodies and cultural references to distinguish their compositions from those of Western composers. Examples of this style include the tone poem <i>Scheherazade</i> by Rimsky-Korsakov, the opera <i>Prince Igor</i> by Borodin, and the piano work <i>Islamey</i> by Balakirev.</p>
+            <p><a href="https://youtu.be/SQNymNaTr-Y">Click here</a> to listen to a performance of <i>Scheherazade</i>.</p>
+            <p><a href="https://youtu.be/5mOPkNUVPmI">Click here</a> to listen to a performance of the <i>Polovtsian Dances</i> from <i>Prince Igor</i>.</p>
+            <p><a href="https://youtu.be/78AslTXMp30">Click here</a> to listen to a performance of <i>Islamey</i> by Balakirev.</p>
+        </div>
+    </div>
+
+    <div class="row main-wrapper">    
+        <div class="col-md-10 col-md-offset-1">
+            <h3 class="text-center">References and Additional Reading</h3>
+        </div>
+    </div>
+
+    <div class="row main-wrapper">
+        <div class="col-md-10 col-md-offset-1">
+            <p>"The Mighty Handful." Wikipedia: The Free Encyclopedia. Wikimedia Foundation, Inc. 24 December 2016. Web. 1 Jul. 2017., <a href = "https://en.wikipedia.org/wiki/The_Mighty_Handful">en.wikipedia.org/wiki/The_Mighty_Handful</a></p>
+            <p>"Mikhail Glinka." Wikipedia: The Free Encyclopedia. Wikimedia Foundation, Inc. 12 June 2017. Web. 1 Jul. 2017., <a href = "https://en.wikipedia.org/wiki/Mikhail_Glinka">en.wikipedia.org/wiki/Mikhail_Glinka</a></p>
+            <p>"Orientalism." Wikipedia: The Free Encyclopedia. Wikimedia Foundation, Inc. 25 June 2017. Web. 1 Jul. 2017., <a href = "https://en.wikipedia.org/wiki/Orientalism">en.wikipedia.org/wiki/Orientalism</a></p>
+        </div>
+    </div>
 </body>
+
+<footer>
+</footer>
 
 </html>

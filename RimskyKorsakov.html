@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Meet the Mighty Five</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./jquery.matchHeight.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      
+    <!--Style required for carousel slide animation-->
+    <style>
+        .carousel-inner > .item > img,
+        .carousel-inner > .item > a > img {
+            width: auto;
+            margin: auto;
+        }
+    </style>
+
+    <!--Individual Stylesheet-->
+    <link rel="stylesheet" href="assets/stylesheet/main.css">
+
+    <!--Scripts-->
+    <script>
+        $(document).ready(function(){
+            adjustTop();
+
+            $(window).resize(function(){
+                adjustTop();
+            });
+
+        });
+
+        function adjustTop() {
+                var height = $('.main-nav').height();
+                $('.main-wrapper').css({'top' : height + 'px'});
+        }    
+
+    </script>
+
+
+</head>
+
+<body>
+    <!-- Page Title and Navigation Bar -->
+    <a name="top"></a>
+    
+    <div>
+        <nav class="navigation navbar navbar-default main-nav navbar-inverse" role="navigation">
+
+            <!--navbar encoding-->    
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Meet the Mighty Five</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html">Home <span class="sr-only">(current)</span></a></li>
+                    <!-- <li><a href="#">Link</a></li> -->
+                    <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Choose a Composer <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="Mussorgsky.html">Modest Mussorgsky</a></li>
+                        <li><a href="Borodin.html">Alexander Borodin</a></li>
+                        <li><a href="RimskyKorsakov.html">Nikolai Rimsky-Korsakov</a></li>
+                        <li><a href="Balakirev.html">Mily Balakirev</a></li>
+                        <li><a href="Cui.html">César Cui</a></li>
+                    </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="About.html">About</a></li>
+                </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+    </div>
+
+    <div class="row main-wrapper">
+        <div class="col-md-12">
+            <h1 class="text-center">Nikolai Rimsky-Korsakov</h1>
+            <h3 class="text-center">1844-1908</h3>
+        </div>
+    </div>
+
+    <div class="row main-wrapper">
+        <div class="col-md-7  col-md-offset-1">
+            <h3 class="text-center">Making the Mighty Five</h3>
+            <br>
+            <p>Nikolai Rimsky-Korsakov studied the piano during his childhood. He served in the Russian Imperial Navy.</p>
+            <p>Rimksy-Korsakov met Mily Balakirev through his former music teacher in 1861. Balakirev introduced Rimsky-Korsakov to César Cui and Modest Mussorgsky.</p>
+            <p>Balakirev taught Rimsky-Korsakov while he was not at sea with the Navy.</p>
+            <p>After being assigned to on-shore duty, Rimsky-Korsakov became more involved with the other members of the Mighty Five; the group collaborated on music and critiqued each others' work. Rimsky-Korsakov was valued among the group members for his talent as an orchestrator.</p>
+            <p>For a time, starting in 1871, Mussorgsky and Rimsky-Korsakov roomed together in the apartment of Rimsky-Korsakov's brother.</p>
+            <p>From 1873 to 1884, Rimsky-Korsakov accepted the civilian post of Inspector of Naval Bands. In this role he traveled through Russia and supervised bandmasters, reviewed their repertoire, and evaluated their instruments.</p>
+            <p></p>
+        </div>
+        <div class="col-md-3">
+            <p><a href="https://commons.wikimedia.org/wiki/File:NARK.jpg#/media/File:NARK.jpg"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e3/NARK.jpg" class="img-fluid dynamicImage img-thumbnail" alt="NARK.jpg"></a><br><small>By The original uploader was <a href="https://en.wikipedia.org/wiki/User:Ivan_Velikii" class="extiw" title="wikipedia:User:Ivan Velikii">Ivan Velikii</a> at <a href="https://en.wikipedia.org/wiki/" class="extiw" title="wikipedia:">English Wikipedia</a> - Transferred from <span class="plainlinks"><a class="external text" href="//en.wikipedia.org">en.wikipedia</a></span> to Commons., Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=3528851">Link</a></small></p>
+        </div>
+    </div>
+
+    <div class="row main-wrapper">
+        <div class="col-md-10 col-md-offset-1">
+            <h3 class="text-center">Music of Rimsky-Korsakov</h3>
+        </div>
+    </div>
+
+    <div class="row main-wrapper">
+        <div class="col-md-10 col-md-offset-1">
+            <p>This section presents a sampling of Nikolai Rimsky-Korsakov's compositions. <a href="https://en.wikipedia.org/wiki/List_of_compositions_by_Nikolai_Rimsky-Korsakov">Click here</a> for an extended list of Rimsky-Korsakov's works.</p>
+            <br>
+            <h4>Capriccio Espagnol (1887)</h4>
+            <p><i>Capriccio Espagnol</i> is the first of three tone poems for which Rimsky-Kosakov is best known. The work is based on Spanish or Asturian traditional folk themes.</p>
+            <p>The tone poem is a five-movement orchestral suite.</p>
+            <p><a href="https://youtu.be/Lh6mDL-VwYw">Click here</a> to listen to a performance of <i>Capriccio Espagnol</i>.</p>
+            <br>
+            <h4>Scheherazade (1888)</h4>
+            <p>Rimksky-Korsakov tells the tale of <i>One Thousand and One Arabian Nights</i> in his tone poem <i>Scheherazade</i>. In this tale, a sultan convinced that all women are false, plans to kill each of his wives after their wedding night. Scheherazade saves her life by entertaining the sultan with stories for a thousand and one nights, after which the sultan gives up his vow to kill her.</p>
+            <p><a href="https://youtu.be/SQNymNaTr-Y">Click here</a> to listen to a performance of <i>Scheherazade</i>.</p>
+            <br>
+            <h4>Russian Easter Festival Overture (1888)</h4>
+            <p>The third of Rimsky-Kosakov's tone poems, <i>Russian Easter Festival Overture</i>, builds on themes from the Russian Orthodox liturgy that would hae been familiar to his audience.</p>
+            <p>Rimsky-Kosakov dedicated the work to the memory of Alexander Borodin and Modest Mussogsky, fellow members of the Mighty Five.</p>
+            <p><a href="https://youtu.be/hbDYtAHTQoE">Click here</a> to listen to a performance of the <i>Russian Easter Festival Overture</i>.</p>
+        </div>
+    </div>
+
+    <div class="row main-wrapper">    
+        <div class="col-md-10 col-md-offset-1">
+            <h3 class="text-center">References and Additional Reading</h3>
+        </div>
+    </div>
+
+    <div class="row main-wrapper">
+        <div class="col-md-10 col-md-offset-1">
+            <p>"<i>Capriccio Espagnol</i>." Wikipedia: The Free Encyclopedia. Wikimedia Foundation, Inc. 11 Jan. 2017. Web. 4 Jul. 2017., <a href = "https://en.wikipedia.org/wiki/Capriccio_Espagnol">en.wikipedia.org/wiki/Capriccio_Espagnol</a></p>
+            <p>"List of compositions by Nikolai Rimsky-Korsakov." Wikipedia: The Free Encyclopedia. Wikimedia Foundation, Inc. 17 Feb. 2017. Web. 3 Jul. 2017., <a href = "https://en.wikipedia.org/wiki/List_of_compositions_by_Nikolai_Rimsky-Korsakov">en.wikipedia.org/wiki/List_of_compositions_by_Nikolai_Rimsky-Korsakov</a></p>
+            <p>"Nikolai Rimsky-Korsakov." Wikipedia: The Free Encyclopedia. Wikimedia Foundation, Inc. 27 June 2017. Web. 3 Jul. 2017., <a href = "https://en.wikipedia.org/wiki/Nikolai_Rimsky-Korsakov">en.wikipedia.org/wiki/Nikolai_Rimsky-Korsakov</a></p>
+            <p>"<i>Russian Easter Festival Overture</i>." Wikipedia: The Free Encyclopedia. Wikimedia Foundation, Inc. 27 Jan. 2017. Web. 4 Jul. 2017., <a href = "https://en.wikipedia.org/wiki/Russian_Easter_Festival_Overture">en.wikipedia.org/wiki/Russian_Easter_Festival_Overture</a></p>
+            <p>"<i>Scheherazade</i> (Rimsky-Korsakov)." Wikipedia: The Free Encyclopedia. Wikimedia Foundation, Inc. 17 Jun. 2017. Web. 4 Jul. 2017., <a href = "https://en.wikipedia.org/wiki/Scheherazade_(Rimsky-Korsakov)">en.wikipedia.org/wiki/Scheherazade_(Rimsky-Korsakov)</a></p>
+        </div>
+    </div>
+
+
+
+    
+</body>
+
+<footer>
+</footer>
+
+</html>

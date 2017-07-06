@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Meet the Mighty Five</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./jquery.matchHeight.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      
+    <!--Style required for carousel slide animation-->
+    <style>
+        .carousel-inner > .item > img,
+        .carousel-inner > .item > a > img {
+            width: auto;
+            margin: auto;
+        }
+    </style>
+
+    <!--Individual Stylesheet-->
+    <link rel="stylesheet" href="assets/stylesheet/main.css">
+
+    <!--Scripts-->
+    <script>
+        $(document).ready(function(){
+            adjustTop();
+
+            $(window).resize(function(){
+                adjustTop();
+            });
+
+        });
+
+        function adjustTop() {
+                var height = $('.main-nav').height();
+                $('.main-wrapper').css({'top' : height + 'px'});
+        }    
+
+    </script>
+
+
+</head>
+
+<body>
+    <!-- Page Title and Navigation Bar -->
+    <a name="top"></a>
+    
+    <div>
+        <nav class="navigation navbar navbar-default main-nav navbar-inverse" role="navigation">
+
+            <!--navbar encoding-->    
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Meet the Mighty Five</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html">Home <span class="sr-only">(current)</span></a></li>
+                    <!-- <li><a href="#">Link</a></li> -->
+                    <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Choose a Composer <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="Mussorgsky.html">Modest Mussorgsky</a></li>
+                        <li><a href="Borodin.html">Alexander Borodin</a></li>
+                        <li><a href="RimskyKorsakov.html">Nikolai Rimsky-Korsakov</a></li>
+                        <li><a href="Balakirev.html">Mily Balakirev</a></li>
+                        <li><a href="Cui.html">César Cui</a></li>
+                    </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="About.html">About</a></li>
+                </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+    </div>
+
+    <div class="row main-wrapper">
+        <div class="col-md-12">
+            <h1 class="text-center">Modest Mussorgsky</h1>
+            <h3 class="text-center">1839-1881</h3>
+        </div>
+    </div>
+
+    <div class="row main-wrapper">
+        <div class="col-md-7 col-md-offset-1">
+            <h3 class="text-center">Making the Mighty Five</h3>
+            <br>
+            <p>From childhood Mussorgsky studied the piano. His first teacher was his mother, and he continued his studies while a student at St. Peter's School (Petrischule) and at the Cadet School of the Guards, both in St. Petersburg. Mussorgsky served in the Russian Imperial Guard until 1858 when he focused his career on his music.</p>
+            <p>Mussorgsky and Borodin first met in 1856 when both were stationed at a military hospital in St. Petersburg, Russia. </p>
+            <p>Mussorgsky's musical circle expanded greatly in 1856 when he met Alexander Dargomyzhsky, a Russian composer whose influence on Russian musical style rivaled that of Mikhail Glinka. Through Dargomyzhsky, Mussorgsky met both Balakirev and Cui, as well as the music critic Vladimir Stasov.</p>
+            <p>Balakirev worked with Mussorgsky to expand his musical knowledge, which up to that point had been focused on piano repertoire. </p>
+            <p>Rimsky-Korsakov was a colleague of Mussorgsky. He re-orchestrated Mussorgsky's opera <i>Boris Gudonov</i> in 1896 and revised it in 1908. He also completed <i>Khovanshchina</i>, an opera that Mussorgsky left unfinished at the time of his death.</p>
+        </div>
+        <div class="col-md-3">
+            <p><a href="https://commons.wikimedia.org/wiki/File:Modest_Musorgskiy,_1870.jpg#/media/File:Modest_Musorgskiy,_1870.jpg"><img src="https://upload.wikimedia.org/wikipedia/commons/d/db/Modest_Musorgskiy%2C_1870.jpg" class="img-fluid dynamicImage img-thumbnail" alt="Modest Musorgskiy, 1870.jpg"></a><br><small>By Transferred from <span class="plainlinks"><a class="external text" href="//en.wikipedia.org">en.wikipedia</a></span> to Commons. 2006-07-08 (first version); 2007-07-13 (last version)Original uploader was <a href="https://en.wikipedia.org/wiki/User:Ivan_Velikii" class="extiw" title="en:User:Ivan Velikii">Ivan Velikii</a> at <a class="external text" href="http://en.wikipedia.org">en.wikipedia</a>, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=4050848">Link</a></small></p>
+        </div>
+    </div>
+
+    <div class="row main-wrapper">
+        <div class="col-md-10 col-md-offset-1">
+            <h3 class="text-center">Music of Mussorgsky</h3>
+        </div>
+    </div>
+
+    <div class="row main-wrapper">
+        <div class="col-md-10 col-md-offset-1">
+            <p>This section presents a sampling of Modest Mussorgsky's compositions. <a href="https://en.wikipedia.org/wiki/List_of_compositions_by_Modest_Mussorgsky">Click here</a> for an extended list of Mussorgsky's works.</p>
+            <br>
+            <h4>Night on Bald Mountain (1867)</h4>
+            <p><i>Night on Bald Mountain</i>, also known as <i>Night on Bare Mountain</i>, is a tone poem that depicts a witches' sabbath occurring on St. John's Eve. Along with Rimsky-Korsakov's <i>Sadko</i>, <i>Night on Bald Mountain</i> is considered to be one of the first tone poems by a Russian composer.</p>
+            <p>Mussorgsky never heard the work performed during his lifetime. The version with which most listeners are familiar is an arrangement that fellow Mighty Five member Nikolai Rimsky-Korsakov completed in 1886, five years after Mussorgsky's death. A version of this arrangement appeared in Disney's animated film <i>Fantasia</i> (1940).</p>
+            <p>Mussorgsky's original tone poem was published in 1968.</p>
+            <p><a href="https://youtu.be/j9R7k3M-wM4">Click here</a> to listen to a performance of Mussorgsky's original orchestration of <i>Night on Bald Mountain</i>.</p>
+            <p><a href="https://www.youtube.com/watch?v=SLCuL-K39eQ">Click here </a> to listen to a performance of Rimsky-Korsakov's arrangement of <i>Night on Bald Mountain</i>.</p>
+            <br>
+            <h4>Boris Gudonov (1868-1869)</h4>
+            <p>Mussorgsky's <i>Boris Gudonov</i> tells the story of the Russian ruler Boris Gudonov, who ruled as Tsar from 1598 to 1605, and his nemesis, the False Dmitriy, who reigned from 1605 to 1606. Mussorgsky composed the libretto in Russian, based on Alexander Pushkin's play of the same name; he later added details from Nikolay Karamzin's <i>History of the Russian State</i> to an 1872 revision.</p>
+            <p>The artist composed two versions of the opera. The Imperial Theatres rejected the original version for its lack of an important <i>prima donna</i> female role. The revised version, including such a role, premiered in 1874 in St. Petersburg.</p>
+            <p><i>Boris Gudonov</i> is the only opera that Mussorgsky completed during his lifetime and is considered to be his masterpiece.</p>
+            <p><a href="https://youtu.be/71oQl46glYs">Click here </a> to listen to a performance of the <i>Prologue</i> from Scene 1 of <i>Boris Gudonov</i>.</p>
+            <p><a href="https://youtu.be/UEBq-gsdI58">Click here </a> to listen to a performance of the <i>Coronation Scene</i> from <i>Boris Gudonov</i>.</p>
+            <br>
+            <h4>Pictures at an Exhibition (1874)</h4>
+            <p>Mussorgsky composed <i>Pictures at an Exhibition</i> in memory of his friend Viktor Hartmann, an artist, architect, and designer who shared Mussorgsky's devotion to Russian art. Hartmann died suddenly of an aneurysm in 1873. The Russian critic Vladimir Stasov organized an exhibition of Hartmann's work at the Imperial Academy of Arts in St. Petersburg.</p>
+            <p>The composer takes the listener on a tour of this exhibition, illustrating musically ten of the artist's works and connecting them with a promenade as the listener walks between the paintings.</p>
+            <p>Mussorgsky wrote <i>Pictures</i> as a work for solo piano. Several artists have arranged and orchestrated the work; Maurice Ravel's orchestration is among the best known.</p>
+            <p><a href="https://youtu.be/s8z1_A-Zlbw">Click here</a> to listen to a performance of the original piano arrangement of <i>Pictures at an Exhibition</i>.</p>
+            <p><a href="https://youtu.be/fiv2i-25wZ8">Click here</a> to listen to a performance of Maurice Ravel's orchestration of <i>Pictures at an Exhibition</i>.</p>
+        </div>
+    </div>
+
+    <div class="row main-wrapper">    
+        <div class="col-md-10 col-md-offset-1">
+            <h3 class="text-center">References and Additional Reading</h3>
+        </div>
+    </div>
+
+    <div class="row main-wrapper">
+        <div class="col-md-10 col-md-offset-1">
+            <p>"<i>Boris Godunov</i> (opera)." Wikipedia: The Free Encyclopedia. Wikimedia Foundation, Inc. 19 June 2017. Web. 3 Jul. 2017., <a href = "https://en.wikipedia.org/wiki/Boris_Godunov_(opera)">en.wikipedia.org/wiki/Boris_Godunov_(opera)</a></p>
+            <p>"List of compositions by Modest Mussorgsky." Wikipedia: The Free Encyclopedia. Wikimedia Foundation, Inc. 28 June 2017. Web. 3 Jul. 2017., <a href = "https://en.wikipedia.org/wiki/List_of_compositions_by_Modest_Mussorgsky">en.wikipedia.org/wiki/List_of_compositions_by_Modest_Mussorgsky</a></p>
+            <p>"Modest Mussorgsky." Wikipedia: The Free Encyclopedia. Wikimedia Foundation, Inc. 24 June 2017. Web. 3 Jul. 2017., <a href = "https://en.wikipedia.org/wiki/Modest_Mussorgsky">en.wikipedia.org/wiki/Modest_Mussorgsky</a></p>
+            <p>"<i>Night on Bald Mountain.</i>" Wikipedia: The Free Encyclopedia. Wikimedia Foundation, Inc. 30 May 2017. Web. 3 Jul. 2017., <a href = "https://en.wikipedia.org/wiki/Night_on_Bald_Mountain">en.wikipedia.org/wiki/Night_on_Bald_Mountain</a></p>
+            <p>"<i>Pictures at an Exhibition.</i>" Wikipedia: The Free Encyclopedia. Wikimedia Foundation, Inc. 25 June 2017. Web. 3 Jul. 2017., <a href = "https://en.wikipedia.org/wiki/Pictures_at_an_Exhibition">en.wikipedia.org/wiki/Pictures_at_an_Exhibition</a></p>
+        </div>
+    </div>
+
+
+</body>
+
+<footer>
+</footer>
+
+</html>

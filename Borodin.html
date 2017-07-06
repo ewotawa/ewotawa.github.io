@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Meet the Mighty Five</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./jquery.matchHeight.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      
+    <!--Style required for carousel slide animation-->
+    <style>
+        .carousel-inner > .item > img,
+        .carousel-inner > .item > a > img {
+            width: auto;
+            margin: auto;
+        }
+    </style>
+
+    <!--Individual Stylesheet-->
+    <link rel="stylesheet" href="assets/stylesheet/main.css">
+
+    <!--Scripts-->
+    <script>
+        $(document).ready(function(){
+            adjustTop();
+
+            $(window).resize(function(){
+                adjustTop();
+            });
+
+        });
+
+        function adjustTop() {
+                var height = $('.main-nav').height();
+                $('.main-wrapper').css({'top' : height + 'px'});
+        }    
+
+    </script>
+
+
+</head>
+
+<body>
+    <!-- Page Title and Navigation Bar -->
+    <a name="top"></a>
+    
+    <div>
+        <nav class="navigation navbar navbar-default main-nav navbar-inverse" role="navigation">
+
+            <!--navbar encoding-->    
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Meet the Mighty Five</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html">Home <span class="sr-only">(current)</span></a></li>
+                    <!-- <li><a href="#">Link</a></li> -->
+                    <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Choose a Composer <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="Mussorgsky.html">Modest Mussorgsky</a></li>
+                        <li><a href="Borodin.html">Alexander Borodin</a></li>
+                        <li><a href="RimskyKorsakov.html">Nikolai Rimsky-Korsakov</a></li>
+                        <li><a href="Balakirev.html">Mily Balakirev</a></li>
+                        <li><a href="Cui.html">César Cui</a></li>
+                    </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="About.html">About</a></li>
+                </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+    </div>
+
+    <div class="row main-wrapper">
+        <div class="col-md-12">
+            <h1 class="text-center">Alexander Borodin</h1>
+            <h3 class="text-center">1833-1887</h3>
+        </div>
+    </div>
+
+    <div class="row main-wrapper">
+        <div class="col-md-3 col-md-offset-1">
+            <p><a href="https://commons.wikimedia.org/wiki/File:Borodin.jpg#/media/File:Borodin.jpg"><img src="https://upload.wikimedia.org/wikipedia/commons/7/70/Borodin.jpg" class="img-fluid dynamicImage img-thumbnail" alt="Borodin.jpg"></a><br><small>By <a rel="nofollow" class="external text" href="http://blakedynasty.typepad.com/.a/6a0120a6ef4079970b01310f69b339970c-800wi">blakedynasty.typepad.com</a>, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=894648">Link</a></small></p>
+        </div>
+        <div class="col-md-7">
+            <h3 class="text-center">Making the Mighty Five</h3>
+            <br>
+            <p>Alexander Borodin was a doctor and a chemist who pursued music as an avocation. In addition to his work in musical composition, he also studied the cello.</p>
+            <p>Borodin studied composition with Mily Balakirev, starting in 1862. During this time he composed his first symphony, which premiered in 1869 with Balakirev as conductor. </p>
+            <p>Modest Mussorgsky and Borodin first met in 1856 when both were stationed at a military hospital in St. Petersburg, Russia. </p>
+            <p>Alexander Borodin died suddenly duing a ball at the Imperial Medical-Surgical Academy, where he conducted research and lectured. Consequently, he left a number of his musical works unfinished. Rimsky-Korsakov, working with fellow musician Alexander Glazunov, completed Borodin's opera <i>Prince Igor</i>.</p>
+        </div>
+    </div>
+
+    <div class="row main-wrapper">
+        <div class="col-md-10 col-md-offset-1">
+            <h3 class="text-center">Music of Borodin</h3>
+        </div>
+    </div>
+
+    <div class="row main-wrapper">
+        <div class="col-md-10 col-md-offset-1">
+            <p>This section presents a sampling of Alexander Borodin's compositions. <a href="https://en.wikipedia.org/wiki/List_of_compositions_by_Alexander_Borodin">Click here</a> for an extended list of Borodin's works.</p>
+            <br>
+            <h4>In the Steppes of Central Asia (1880)</h4>
+            <p>Borodin's symphonic poem <i>In the Steppes of Central Asia</i> depicts a caravan of Central Asians traveling across the desert (the Russian steppe) under the protection of Russian troops. Borodin employs distinct themes to indicate various elements in the piece, including a melody led by the French horns to represent those from Central Asia, a traveling theme to indicate the hooves of horses and camels, and a Russian melody to depict the Russian troops.</p>
+            <p>The motivation for the musical tableaux was a celebration of the silver anniversary of the regin of Tsar Alexander II of Russia.</p>
+            <p><a href="https://youtu.be/Dq4bOmxKVQQ">Click here</a> to listen to a performance of <i>In the Steppes of Central Asia</i>. </p>
+            <br>
+            <h4>String Quartet No. 2 in D (1881)</h4>
+            <p>In contrast to the other members of the Mighty Five, Alexander Borodin embraced chamber music forms, one example of which is his second string quartet. The quartet features two violins, one viola, and one cello.</p>
+            <p>Borodin's second string quartet is best known for its Nocturne, the third movement of the piece.</p>
+            <p>Several of Borodin's musical themes found there way into modern pop culture through the American musical <i>Kismet</i> in 1953. "And This is my Beloved" derives its melody from the Nocturne, and "Baubles, Bangles, and Beads" sourced its melody from one of the themes from the quartet's second movement.</p>
+            <p><a href="https://youtu.be/9YVd5efkUnw">Click here</a> to listen to a performance of Borodin's String Quartet No. 2 </p>
+            <p><a href="https://youtu.be/-4mFL2Jd7zY">Click here</a> to listen to a performance of "And this is my Beloved" from <i>Kismet</i>.</p>
+            <p><a href="https://youtu.be/vekFIzD7t2U">Click here</a> to listen to a performance of "Baubles, Bangles, and Beads" from <i>Kismet</i>.</p>
+            <br>
+            <h4>Prince Igor (1869-1887)</h4>
+            <p>The epic poem <i>The Lay of Igor's Host</i>, suggested by music critic Vladimir Stasov, provided the inspiration for Alexander Borodin's opera <i>Prince Igor</i>. The opera tells the story of Rus prince Igor Svyatoslavich's campaign against invading Polovtsian (Cuman) tribes in 1185.</p>
+            <p>Borodin left the opera unfinished upon his sudden death in 1887. Colleagues Nikkolai Rimsky-Korsakov and Alexander Glazunov completed the work; it premiered in St. Petersburn in 1890.</p>
+            <p>Melodies from <i>Prince Igor</i> also found their way into the musical <i>Kismet</i>. "Stranger in Paradise", for example, sources its melody from one of the opera's <i>Polovtsian Dances</i>, the <i>Gliding Dance of the Maidens</i>.</p>
+            <p><a href="https://youtu.be/QWU1uj9WmOM">Click here</a> to listen to a performance of the <i>Polovtsian Dances</i> from <i>Prince Igor</i>.</p>
+            <p><a href="https://youtu.be/P0c3od7KynE">Click here </a> to listen to a performance of "Stranger in Paradise" from <i>Kismet</i>.</p>
+        </div>
+    </div>
+
+    <div class="row main-wrapper">    
+        <div class="col-md-10 col-md-offset-1">
+            <h3 class="text-center">References and Additional Reading</h3>
+        </div>
+    </div>
+
+    <div class="row main-wrapper">
+        <div class="col-md-10 col-md-offset-1">
+            <p>"Alexander Borodin." Wikipedia: The Free Encyclopedia. Wikimedia Foundation, Inc. 30 May 2017. Web. 3 Jul. 2017., <a href = "https://en.wikipedia.org/wiki/Alexander_Borodin">en.wikipedia.org/wiki/Alexander_Borodin</a></p>
+            <p>"<i>In the Steppes of Central Asia</i>." Wikipedia: The Free Encyclopedia. Wikimedia Foundation, Inc. 26 Jan. 2017. Web. 3 Jul. 2017., <a href = "https://en.wikipedia.org/wiki/In_the_Steppes_of_Central_Asia">en.wikipedia.org/wiki/In_the_Steppes_of_Central_Asia</a></p>
+            <p>"List of compositions by Alexander Borodin." Wikipedia: The Free Encyclopedia. Wikimedia Foundation, Inc. 23 Jun. 2017. Web. 3 Jul. 2017., <a href = "https://en.wikipedia.org/wiki/List_of_compositions_by_Alexander_Borodin">en.wikipedia.org/wiki/List_of_compositions_by_Alexander_Borodin</a></p>
+            <p>"Polovtsian Dances." Wikipedia: The Free Encyclopedia. Wikimedia Foundation, Inc. 24 Jun. 2017. Web. 3 Jul. 2017., <a href = "https://en.wikipedia.org/wiki/Polovtsian_Dances">en.wikipedia.org/wiki/Polovtsian_Dances</a></p>
+            <p>"<i>Prince Igor</i>." Wikipedia: The Free Encyclopedia. Wikimedia Foundation, Inc. 3 Jul. 2017. Web. 3 Jul. 2017., <a href = "https://en.wikipedia.org/wiki/Prince_Igor">en.wikipedia.org/wiki/Prince_Igor</a></p>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+<footer>
+</footer>
+
+</html>

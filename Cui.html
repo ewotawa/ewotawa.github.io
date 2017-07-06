@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Meet the Mighty Five</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./jquery.matchHeight.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      
+    <!--Style required for carousel slide animation-->
+    <style>
+        .carousel-inner > .item > img,
+        .carousel-inner > .item > a > img {
+            width: auto;
+            margin: auto;
+        }
+    </style>
+
+    <!--Individual Stylesheet-->
+    <link rel="stylesheet" href="assets/stylesheet/main.css">
+
+    <!--Scripts-->
+    <script>
+        $(document).ready(function(){
+            adjustTop();
+
+            $(window).resize(function(){
+                adjustTop();
+            });
+
+        });
+
+        function adjustTop() {
+                var height = $('.main-nav').height();
+                $('.main-wrapper').css({'top' : height + 'px'});
+        }    
+
+    </script>
+
+
+</head>
+
+<body>
+    <!-- Page Title and Navigation Bar -->
+    <a name="top"></a>
+    
+    <div>
+        <nav class="navigation navbar navbar-default main-nav navbar-inverse" role="navigation">
+
+            <!--navbar encoding-->    
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Meet the Mighty Five</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html">Home <span class="sr-only">(current)</span></a></li>
+                    <!-- <li><a href="#">Link</a></li> -->
+                    <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Choose a Composer <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="Mussorgsky.html">Modest Mussorgsky</a></li>
+                        <li><a href="Borodin.html">Alexander Borodin</a></li>
+                        <li><a href="RimskyKorsakov.html">Nikolai Rimsky-Korsakov</a></li>
+                        <li><a href="Balakirev.html">Mily Balakirev</a></li>
+                        <li><a href="Cui.html">César Cui</a></li>
+                    </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="About.html">About</a></li>
+                </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+    </div>
+
+    <div class="row main-wrapper">
+        <div class="col-md-12">
+            <h1 class="text-center">César Cui</h1>
+            <h3 class="text-center">1835-1918</h3>
+        </div>
+    </div>
+
+    <div class="row main-wrapper">
+        <div class="col-md-3 col-md-offset-1">
+            <p><a href="https://commons.wikimedia.org/wiki/File:Cesar_cui.jpg#/media/File:Cesar_cui.jpg"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Cesar_cui.jpg" class="img-fluid dynamicImage img-thumbnail" alt="Cesar cui.jpg"></a><br><small>By <span lang="en">Unknown</span><a href="https://www.wikidata.org/wiki/Q4233718" title="wikidata:Q4233718"></a> - Published on p. 118 of What We Hear in Music in 1913<a href="#cite_note-1">[1]</a>, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=137059">Link</a></small></p>
+        </div>
+        <div class="col-md-7">
+            <h3 class="text-center">Making the Mighty Five</h3>
+            <br>
+            <p>As a child, César Cui studied the piano and began composing small pieces at age fourteen.</p>
+            <p>Cui served as an officer in the Russian Imperial Army, achieving the rank of Engineer-General. Through his avocation of music composition and criticism, he became a member of the Mighty Five.</p>
+            <p>Cui met Balakirev in 1856.</p>
+            <p>Both Cui and Rimsky-Korsakov served on the opera selection committee at the Marinsky Theatre. Both men left their positions in 1883 to protest the rejection of Modest Mussorgsky's opera <i>Khovanshchina</i>.</p>
+        </div>
+    </div>
+
+    <div class="row main-wrapper">
+        <div class="col-md-10 col-md-offset-1">
+            <h3 class="text-center">Musical Work of Cui</h3>
+        </div>
+    </div>
+
+    <div class="row main-wrapper">
+        <div class="col-md-10 col-md-offset-1">
+            <p>This section presents a sampling of César Cui's work as a music critic and as a composer. <a href="https://en.wikipedia.org/wiki/List_of_compositions_by_C%C3%A9sar_Cui">Click here</a> for an extended list of Cui's works.</p>
+            <br>
+            <h4>Work as a Music Critic</h4>
+            <p>Cui contributed almost 800 articles from 1864 to 1918 to Russian and European publications, covering topics such as recitals and concerts, personalities, and new publications of music.</p>
+            <p>As a music critic Cui championed the work of the fellow members of the Mighty Five.</p>
+            <p><a href="https://en.wikipedia.org/wiki/List_of_literary_works_by_C%C3%A9sar_Cui">Click here</a> to read more about Cui's body of work as a music critic and military writer.</p>
+            <br>
+            <h4>Work as a Composer</h4>
+            <p>Cui's work does not follow the Russian nationalistic style of his Mighty Five contemporaries. He does source the writings of Pushkin in his opera, however, and much of his vocal composition relies on Russian textx.</p>
+            <p>Art songs make up the majority of Cui's compositions, including vocal duets and songs for children.</p>
+            <p><a href="https://youtu.be/43ETzJUOXLo">Click here</a> to listen to a performance of Cui's <i>Kaleidoscope</i>, Op. 50, a work for violin and piano.</p>
+        </div>
+    </div>
+
+    <div class="row main-wrapper">    
+        <div class="col-md-10 col-md-offset-1">
+            <h3 class="text-center">References and Additional Reading</h3>
+        </div>
+    </div>
+
+    <div class="row main-wrapper">
+        <div class="col-md-10 col-md-offset-1">
+            <p>"César Cui." Wikipedia: The Free Encyclopedia. Wikimedia Foundation, Inc. 3 June 2017. Web. 3 Jul. 2017., <a href = "https://en.wikipedia.org/wiki/C%C3%A9sar_Cui">en.wikipedia.org/wiki/C%C3%A9sar_Cui</a></p>
+            <p>"List of compositions by César Cui." Wikipedia: The Free Encyclopedia. Wikimedia Foundation, Inc. 15 June 2016. Web. 3 Jul. 2017., <a href = "https://en.wikipedia.org/wiki/List_of_compositions_by_C%C3%A9sar_Cui">en.wikipedia.org/wiki/List_of_compositions_by_C%C3%A9sar_Cui</a></p>
+            <p>"List of literary works by César Cui." Wikipedia: The Free Encyclopedia. Wikimedia Foundation, Inc. 6 Jul. 2015. Web. 3 Jul. 2017., <a href = "https://en.wikipedia.org/wiki/List_of_literary_works_by_C%C3%A9sar_Cui">en.wikipedia.org/wiki/List_of_literary_works_by_C%C3%A9sar_Cui</a></p>
+        </div>
+    </div>
+
+
+
+</body>
+
+<footer>
+</footer>
+
+</html>
