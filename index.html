@@ -69,7 +69,7 @@
     <div class="row">
     <div class="main-wrapper">
         <div class="col-md-6 col-md-offset-3">
-            <img class="centerImage" src="assets/images/kuchka.png" width=80%>
+            <img class="centerImage" src="assets/images/kuchka.png">
             <h1 class="text-center">Meet the Mighty Five</h1>
         </div>
     </div>
@@ -174,7 +174,13 @@
             <p><small>By unknown, upload by <a href="//commons.wikimedia.org/wiki/User:Parpan05" title="User:Parpan05">Adrian Michael</a> - Die berühmten Musiker Kunstverlag Lucien Mazenod, Genf 1946, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=10599861">Link</a></small></p> 
         </div>
         <div class="col-md-7">
-            <img class="centerImage" src="assets/images/glinka.png" width=70%>
+            <picture>
+                <source srcset="assets/images/glinka_small.png" media="(max-width: 40em) and (orientation: landscape)" class="centerImage" width=60% height=60%>
+                <source srcset="assets/images/glinka_small.png" media="(max-width: 40em) and (orientation: portrait)" class="centerImage" width=60% height=60%>
+                <source srcset="assets/images/glinka.png" media="(min-width: 40em) and (orientation: landscape)" class="centerImage" width=80%>
+                <source srcset="assets/images/glinka.png" media="(min-width: 40em) and (orientation: portrait)"class="centerImage" width=80%>
+                <img srcset="assets/images/glinka.png" alt="My default image" class="centerImage" width=80%>
+            </picture>      
             <h4 class="text-center">Mikhail Ivanovich Glinka (1804-1857)</h4>
             <p>Composers such as Mikhail Glinka paved the way for the Mighty Five to explore Russian themes in classical music.</p>
             <p>Glinka is best known for his two operas, <i>A Life for the Tsar</i> (1836) and <i>Ruslan and Liudmila</i> (1842). <i> A Life for the Tsar</i> tells the story of Ivan Susanin, a Russian patriotic hero. The musical style of the work mirrors the opera style popular in Italy at the time, rather than highlighting Russian themes, but the work earned Glinka a positive reception both with the tsar and with the public.</p>

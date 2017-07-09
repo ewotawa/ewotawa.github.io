@@ -68,7 +68,13 @@
 
     <div class="row main-wrapper">
         <div class="col-md-12">
-            <img class="centerImage" src="assets/images/mussorgsky.png" width=80%>
+            <picture>
+                <source srcset="assets/images/mussorgsky_small.png" media="(max-width: 40em) and (orientation: landscape)" class="centerImage" width=80%>
+                <source srcset="assets/images/mussorgsky_small.png" media="(max-width: 40em) and (orientation: portrait)" class="centerImage" width=80%>
+                <source srcset="assets/images/mussorgsky.png" media="(min-width: 40em) and (orientation: landscape)" class="centerImage" width=80%>
+                <source srcset="assets/images/mussorgsky.png" media="(min-width: 40em) and (orientation: portrait)"class="centerImage" width=80%>
+                <img srcset="assets/images/mussorgsky.png" alt="My default image" class="centerImage" width=80%>
+            </picture>      
             <h1 class="text-center">Modest Petrovich Mussorgsky</h1>
             <h3 class="text-center">1839-1881</h3>
         </div>
