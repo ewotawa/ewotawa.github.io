@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="./jquery.matchHeight.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
       
     <!--Style required for carousel slide animation-->
@@ -20,25 +19,6 @@
 
     <!--Individual Stylesheet-->
     <link rel="stylesheet" href="assets/stylesheet/main.css">
-
-    <!--Scripts-->
-    <script>
-        $(document).ready(function(){
-            adjustTop();
-
-            $(window).resize(function(){
-                adjustTop();
-            });
-
-        });
-
-        function adjustTop() {
-                var height = $('.main-nav').height();
-                $('.main-wrapper').css({'top' : height + 'px'});
-        }    
-
-    </script>
-
 
 </head>
 
@@ -88,23 +68,27 @@
 
     <div class="row main-wrapper">
         <div class="col-md-12">
-            <h1 class="text-center">Modest Mussorgsky</h1>
+            <img class="centerImage" src="assets/images/mussorgsky.png" width=80%>
+            <h1 class="text-center">Modest Petrovich Mussorgsky</h1>
             <h3 class="text-center">1839-1881</h3>
         </div>
     </div>
 
     <div class="row main-wrapper">
-        <div class="col-md-7 col-md-offset-1">
-            <h3 class="text-center">Making the Mighty Five</h3>
-            <br>
-            <p>From childhood Mussorgsky studied the piano. His first teacher was his mother, and he continued his studies while a student at St. Peter's School (Petrischule) and at the Cadet School of the Guards, both in St. Petersburg. Mussorgsky served in the Russian Imperial Guard until 1858 when he focused his career on his music.</p>
-            <p>Mussorgsky and Borodin first met in 1856 when both were stationed at a military hospital in St. Petersburg, Russia. </p>
-            <p>Mussorgsky's musical circle expanded greatly in 1856 when he met Alexander Dargomyzhsky, a Russian composer whose influence on Russian musical style rivaled that of Mikhail Glinka. Through Dargomyzhsky, Mussorgsky met both Balakirev and Cui, as well as the music critic Vladimir Stasov.</p>
-            <p>Balakirev worked with Mussorgsky to expand his musical knowledge, which up to that point had been focused on piano repertoire. </p>
-            <p>Rimsky-Korsakov was a colleague of Mussorgsky. He re-orchestrated Mussorgsky's opera <i>Boris Gudonov</i> in 1896 and revised it in 1908. He also completed <i>Khovanshchina</i>, an opera that Mussorgsky left unfinished at the time of his death.</p>
-        </div>
-        <div class="col-md-3">
-            <p><a href="https://commons.wikimedia.org/wiki/File:Modest_Musorgskiy,_1870.jpg#/media/File:Modest_Musorgskiy,_1870.jpg"><img src="https://upload.wikimedia.org/wikipedia/commons/d/db/Modest_Musorgskiy%2C_1870.jpg" class="img-fluid dynamicImage img-thumbnail" alt="Modest Musorgskiy, 1870.jpg"></a><br><small>By Transferred from <span class="plainlinks"><a class="external text" href="//en.wikipedia.org">en.wikipedia</a></span> to Commons. 2006-07-08 (first version); 2007-07-13 (last version)Original uploader was <a href="https://en.wikipedia.org/wiki/User:Ivan_Velikii" class="extiw" title="en:User:Ivan Velikii">Ivan Velikii</a> at <a class="external text" href="http://en.wikipedia.org">en.wikipedia</a>, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=4050848">Link</a></small></p>
+        <div class="container col-md-10 col-md-offset-1 grad">
+            <div class="col-md-8">
+                <h3 class="text-center">Making the Mighty Five</h3>
+                <br>
+                <p>From childhood Mussorgsky studied the piano. His first teacher was his mother, and he continued his studies while a student at St. Peter's School (Petrischule) and at the Cadet School of the Guards, both in St. Petersburg. Mussorgsky served in the Russian Imperial Guard until 1858 when he focused his career on his music.</p>
+                <p>Mussorgsky and Borodin first met in 1856 when both were stationed at a military hospital in St. Petersburg, Russia. </p>
+                <p>Mussorgsky's musical circle expanded greatly in 1856 when he met Alexander Dargomyzhsky, a Russian composer whose influence on Russian musical style rivaled that of Mikhail Glinka. Through Dargomyzhsky, Mussorgsky met both Balakirev and Cui, as well as the music critic Vladimir Stasov.</p>
+                <p>Balakirev worked with Mussorgsky to expand his musical knowledge, which up to that point had been focused on piano repertoire. </p>
+                <p>Rimsky-Korsakov was a colleague of Mussorgsky. He re-orchestrated Mussorgsky's opera <i>Boris Gudonov</i> in 1896 and revised it in 1908. He also completed <i>Khovanshchina</i>, an opera that Mussorgsky left unfinished at the time of his death.</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <p><a href="https://commons.wikimedia.org/wiki/File:Modest_Musorgskiy,_1870.jpg#/media/File:Modest_Musorgskiy,_1870.jpg"><img src="https://upload.wikimedia.org/wikipedia/commons/d/db/Modest_Musorgskiy%2C_1870.jpg" class="img-fluid shrinkImage img-thumbnail" alt="Modest Musorgskiy, 1870.jpg"></a><br><strong>Modest Mussorgsky</strong></p>
+                </p><small>By Transferred from <span class="plainlinks"><a class="external text" href="//en.wikipedia.org">en.wikipedia</a></span> to Commons. 2006-07-08 (first version); 2007-07-13 (last version)Original uploader was <a href="https://en.wikipedia.org/wiki/User:Ivan_Velikii" class="extiw" title="en:User:Ivan Velikii">Ivan Velikii</a> at <a class="external text" href="http://en.wikipedia.org">en.wikipedia</a>, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=4050848">Link</a></small></p>
+            </div>
         </div>
     </div>
 
@@ -138,24 +122,36 @@
             <p>Mussorgsky wrote <i>Pictures</i> as a work for solo piano. Several artists have arranged and orchestrated the work; Maurice Ravel's orchestration is among the best known.</p>
             <p><a href="https://youtu.be/s8z1_A-Zlbw">Click here</a> to listen to a performance of the original piano arrangement of <i>Pictures at an Exhibition</i>.</p>
             <p><a href="https://youtu.be/fiv2i-25wZ8">Click here</a> to listen to a performance of Maurice Ravel's orchestration of <i>Pictures at an Exhibition</i>.</p>
+            <br>
         </div>
     </div>
 
-    <div class="row main-wrapper">    
-        <div class="col-md-10 col-md-offset-1">
-            <h3 class="text-center">References and Additional Reading</h3>
-        </div>
-    </div>
+
 
     <div class="row main-wrapper">
         <div class="col-md-10 col-md-offset-1">
-            <p>"<i>Boris Godunov</i> (opera)." Wikipedia: The Free Encyclopedia. Wikimedia Foundation, Inc. 19 June 2017. Web. 3 Jul. 2017., <a href = "https://en.wikipedia.org/wiki/Boris_Godunov_(opera)">en.wikipedia.org/wiki/Boris_Godunov_(opera)</a></p>
-            <p>"List of compositions by Modest Mussorgsky." Wikipedia: The Free Encyclopedia. Wikimedia Foundation, Inc. 28 June 2017. Web. 3 Jul. 2017., <a href = "https://en.wikipedia.org/wiki/List_of_compositions_by_Modest_Mussorgsky">en.wikipedia.org/wiki/List_of_compositions_by_Modest_Mussorgsky</a></p>
-            <p>"Modest Mussorgsky." Wikipedia: The Free Encyclopedia. Wikimedia Foundation, Inc. 24 June 2017. Web. 3 Jul. 2017., <a href = "https://en.wikipedia.org/wiki/Modest_Mussorgsky">en.wikipedia.org/wiki/Modest_Mussorgsky</a></p>
-            <p>"<i>Night on Bald Mountain.</i>" Wikipedia: The Free Encyclopedia. Wikimedia Foundation, Inc. 30 May 2017. Web. 3 Jul. 2017., <a href = "https://en.wikipedia.org/wiki/Night_on_Bald_Mountain">en.wikipedia.org/wiki/Night_on_Bald_Mountain</a></p>
-            <p>"<i>Pictures at an Exhibition.</i>" Wikipedia: The Free Encyclopedia. Wikimedia Foundation, Inc. 25 June 2017. Web. 3 Jul. 2017., <a href = "https://en.wikipedia.org/wiki/Pictures_at_an_Exhibition">en.wikipedia.org/wiki/Pictures_at_an_Exhibition</a></p>
+            <div class="panel panel-default">
+                <div onclick="panelToggle()" class="panel-heading">
+                    <div class="panel-title text-center">
+                    <h4>References and Additional Reading</h4>
+                    <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+                    </div>
+                </div>
+                <div id="myPanelBody"class="panel-body">
+                    <p>"<i>Boris Godunov</i> (opera)." Wikipedia: The Free Encyclopedia. Wikimedia Foundation, Inc. 19 June 2017. Web. 3 Jul. 2017., <a href = "https://en.wikipedia.org/wiki/Boris_Godunov_(opera)">en.wikipedia.org/wiki/Boris_Godunov_(opera)</a></p>
+                    <p>"List of compositions by Modest Mussorgsky." Wikipedia: The Free Encyclopedia. Wikimedia Foundation, Inc. 28 June 2017. Web. 3 Jul. 2017., <a href = "https://en.wikipedia.org/wiki/List_of_compositions_by_Modest_Mussorgsky">en.wikipedia.org/wiki/List_of_compositions_by_Modest_Mussorgsky</a></p>
+                    <p>"Modest Mussorgsky." Wikipedia: The Free Encyclopedia. Wikimedia Foundation, Inc. 24 June 2017. Web. 3 Jul. 2017., <a href = "https://en.wikipedia.org/wiki/Modest_Mussorgsky">en.wikipedia.org/wiki/Modest_Mussorgsky</a></p>
+                    <p>"<i>Night on Bald Mountain.</i>" Wikipedia: The Free Encyclopedia. Wikimedia Foundation, Inc. 30 May 2017. Web. 3 Jul. 2017., <a href = "https://en.wikipedia.org/wiki/Night_on_Bald_Mountain">en.wikipedia.org/wiki/Night_on_Bald_Mountain</a></p>
+                    <p>"<i>Pictures at an Exhibition.</i>" Wikipedia: The Free Encyclopedia. Wikimedia Foundation, Inc. 25 June 2017. Web. 3 Jul. 2017., <a href = "https://en.wikipedia.org/wiki/Pictures_at_an_Exhibition">en.wikipedia.org/wiki/Pictures_at_an_Exhibition</a></p>
+                </div>
+            </div>
         </div>
     </div>
+
+
+    <!-- JavaScript link -->
+	<script src="assets/js/main.js"></script>
+
 
 
 </body>

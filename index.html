@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="./jquery.matchHeight.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
       
     <!--Style required for carousel slide animation-->
@@ -20,25 +19,6 @@
 
     <!--Individual Stylesheet-->
     <link rel="stylesheet" href="assets/stylesheet/main.css">
-
-    <!--Scripts-->
-    <script>
-        $(document).ready(function(){
-            adjustTop();
-
-            $(window).resize(function(){
-                adjustTop();
-            });
-
-        });
-
-        function adjustTop() {
-                var height = $('.main-nav').height();
-                $('.main-wrapper').css({'top' : height + 'px'});
-        }    
-
-    </script>
-
 
 </head>
 
@@ -87,11 +67,14 @@
     </div>
 
     <div class="row">
-    <section class="main-wrapper">
-        <div class="col-md-12">
+    <div class="main-wrapper">
+        <div class="col-md-6 col-md-offset-3">
+            <img class="centerImage" src="assets/images/kuchka.png" width=80%>
             <h1 class="text-center">Meet the Mighty Five</h1>
         </div>
+    </div>
     <!-- Carousel Encoding -->
+    <div class="row main-wrapper">
         <div class="container col-md-6 col-md-offset-3">
         <br>
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -105,7 +88,7 @@
         </ol>
 
         <!-- Wrapper for slides -->
-        <div class="carousel-inner" role="listbox">
+        <div class="carousel-inner blackBorder" role="listbox">
 
         <div class="item active">
             <a href="Mussorgsky.html"><img src="assets/images/ryan-holloway-168925.jpg" alt="Piano image by Ryan Holloway" width="460" height="345"></a>
@@ -160,16 +143,13 @@
         </a>
         </div>
         </div>
-    </section><!--Section for Wrapper and Carousel -->
+    </div><!--div for Wrapper and Carousel -->
     </div>
 
     <div class="row main-wrapper">
-        <div class="col-md-10 col-md-offset-1">
+        <div class="col-md-10 col-md-offset-1 grad">
             <h3 class="text-center">Who were the Mighty Five?</h3>
-        </div>
-    </div>
-    <div class="row main-wrapper">
-        <div class="col-md-10 col-md-offset-1">
+            <br>
             <p>The Mighty Five, also known as The Mighty Handful or The Kuchka, are the five composers and music critics credited with creating the Russian sound in classical music: </p>
             <ul>
                 <li>Modest Mussorgsky (1839-1881)</li>
@@ -180,25 +160,27 @@
             </ul>                
             <p>The artists were self-trained musicians, working day jobs ranging from chemist to naval officer. The group collaborated from 1856 to 1870.</p>
         </div>
-    </div>  
+    </div>
 
     <div class="row main-wrapper">    
         <div class="col-md-10 col-md-offset-1">
-            <h3 class="text-center"> Origins </h3>
+            <h3 class="text-center">Origins</h3>
         </div>
     </div>
 
     <div class="row main-wrapper">
-        <div class="col-md-7 col-md-offset-1">
-            <h4>Mikhail Glinka (1804-1857)</h4>
+        <div class="col-md-3 col-md-offset-1 text-center">
+            <p><a href="https://commons.wikimedia.org/wiki/File:Michael_Glinka.jpg#/media/File:Michael_Glinka.jpg"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/Michael_Glinka.jpg" class="img-fluid dynamicImage img-thumbnail" alt="Michael Glinka.jpg" ></a><br><strong>Mikhail Glinka</strong></p>
+            <p><small>By unknown, upload by <a href="//commons.wikimedia.org/wiki/User:Parpan05" title="User:Parpan05">Adrian Michael</a> - Die berühmten Musiker Kunstverlag Lucien Mazenod, Genf 1946, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=10599861">Link</a></small></p> 
+        </div>
+        <div class="col-md-7">
+            <img class="centerImage" src="assets/images/glinka.png" width=70%>
+            <h4 class="text-center">Mikhail Ivanovich Glinka (1804-1857)</h4>
             <p>Composers such as Mikhail Glinka paved the way for the Mighty Five to explore Russian themes in classical music.</p>
             <p>Glinka is best known for his two operas, <i>A Life for the Tsar</i> (1836) and <i>Ruslan and Liudmila</i> (1842). <i> A Life for the Tsar</i> tells the story of Ivan Susanin, a Russian patriotic hero. The musical style of the work mirrors the opera style popular in Italy at the time, rather than highlighting Russian themes, but the work earned Glinka a positive reception both with the tsar and with the public.</p>
             <p>Glinka began to introduce Russian musical themes in his second opera, <i>Ruslan and Liudmila</i>, based on a story by Alexander Pushkin. Included within what is still a largely Italian style, listeners heard new constructs such as the whole-tone scale and Russian folk themes.</p>
             <p><a href="https://youtu.be/Nyx99YcHdIQ">Click here</a> to hear Glinka's use of the whole-tone scale in the Overture to <i>Ruslan and Liudmila</i>.</p>
             <p><a href="https://youtu.be/vA2899pyrbo">Click here</a> to hear the <i>Oriental Dances</i>, an example of the Russian musical style that Glinka introduced in <i>Ruslan and Liudmila</i>.</p>
-        </div>
-        <div class="col-md-3">
-            <p class="text-center"><a href="https://commons.wikimedia.org/wiki/File:Michael_Glinka.jpg#/media/File:Michael_Glinka.jpg"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/Michael_Glinka.jpg" class="img-fluid dynamicImage img-thumbnail" alt="Michael Glinka.jpg" ></a><br><small>By unknown, upload by <a href="//commons.wikimedia.org/wiki/User:Parpan05" title="User:Parpan05">Adrian Michael</a> - Die berühmten Musiker Kunstverlag Lucien Mazenod, Genf 1946, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=10599861">Link</small></a></p> 
         </div>
     </div>
 
@@ -215,26 +197,29 @@
     </div>
 
     <div class="row main-wrapper">
-        <div class="col-md-5 col-md-offset-1">
+        <div class="container col-md-10 col-md-offset-1 grad">
+        <div class="col-md-6">
             <h4>Music of the Villages</h4>
-            <p>The composers employed several techniques to capture the village and peasant songs of the Russian people. Several musical techniques characterized this approach:</p>
+            <p>The composers employed several techniques to capture the village and peasant songs of the Russian people.</p>
+            <p>Several musical techniques characterized this approach.</p>
             <ul>
-                <li><b>Tonal mutability:</b> the movement of a melody from one tonal center to another, usually across keys.</li>
+                <li><b>Tonal mutability:</b> the movement of a melody from one tonal center to another, usually across keys. Music in this style will typically end in a different key from that in which it began.</li>
                 <li><b>Heterophony:</b> two or more performers render a melody simultaneously with variation. The melody later converges to a single line.</li>
-                <li><b>Parallel intervals:</b> the use of fifth, fourth, or third intervals in a melody.</li>
+                <li><b>Parallel intervals:</b> the use of fifth, fourth, or third intervals in a melody. This approach to hamony does not often appear in Western music.</li>
             </ul>
         </div>
 
-        <div class="col-md-5">
+        <div class="col-md-6">
             <h4>Harmonic Devices</h4>
-            <p>The Mighty Five also employed harmonic devices not characteristic of Russian church or folk music to distinguish their style from Western music:</p>
+            <p>The Mighty Five also employed harmonic devices in the development of the Russian sound. None of these devices originates in Russian folk or religious music, but the composers of the Mighty Five employed them as a tool to distinguish their music from that of the West.</p>
             <ul>
                 <li><b>Whole tone scale:</b> a device introduced by Glinka, usually to indicate an ominous tone.</li>
-                <li><b>Russian submediant:</b> a specific style of chord structure and chord progression.</li>
+                <li><b>Russian submediant:</b> a specific style of chord structure and chord progression. Glinka employed this structure in <i>Ruslan and Liudmila</i>.</li>
                 <li><b>Diminished or octactonic scale:</b> a scale popularized by Rimsky-Korsakov that other composers later borrowed.</li>
                 <li><b>Modular rotation in a sequence of thirds:</b> a loose tone poem structure that the composers adopted from Franz List.</li>
                 <li><b>Pentatonic scale:</b> a scale with only five notes in the octave, rather than the traditional seven.</li>
             </ul>
+        </div>
         </div>
     </div>
 
@@ -248,19 +233,28 @@
         </div>
     </div>
 
-    <div class="row main-wrapper">    
+    <div class="row main-wrapper">
         <div class="col-md-10 col-md-offset-1">
-            <h3 class="text-center">References and Additional Reading</h3>
+            <div class="panel panel-default">
+                <div onclick="panelToggle()" class="panel-heading">
+                    <div class="panel-title text-center">
+                    <h4>References and Additional Reading</h4>
+                    <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+                    </div>
+                </div>
+                <div id="myPanelBody"class="panel-body">
+                    <p>"The Mighty Handful." Wikipedia: The Free Encyclopedia. Wikimedia Foundation, Inc. 24 December 2016. Web. 1 Jul. 2017., <a href = "https://en.wikipedia.org/wiki/The_Mighty_Handful">en.wikipedia.org/wiki/The_Mighty_Handful</a></p>
+                    <p>"Mikhail Glinka." Wikipedia: The Free Encyclopedia. Wikimedia Foundation, Inc. 12 June 2017. Web. 1 Jul. 2017., <a href = "https://en.wikipedia.org/wiki/Mikhail_Glinka">en.wikipedia.org/wiki/Mikhail_Glinka</a></p>
+                    <p>"Orientalism." Wikipedia: The Free Encyclopedia. Wikimedia Foundation, Inc. 25 June 2017. Web. 1 Jul. 2017., <a href = "https://en.wikipedia.org/wiki/Orientalism">en.wikipedia.org/wiki/Orientalism</a></p>
+                </div>
+            </div>
         </div>
     </div>
 
-    <div class="row main-wrapper">
-        <div class="col-md-10 col-md-offset-1">
-            <p>"The Mighty Handful." Wikipedia: The Free Encyclopedia. Wikimedia Foundation, Inc. 24 December 2016. Web. 1 Jul. 2017., <a href = "https://en.wikipedia.org/wiki/The_Mighty_Handful">en.wikipedia.org/wiki/The_Mighty_Handful</a></p>
-            <p>"Mikhail Glinka." Wikipedia: The Free Encyclopedia. Wikimedia Foundation, Inc. 12 June 2017. Web. 1 Jul. 2017., <a href = "https://en.wikipedia.org/wiki/Mikhail_Glinka">en.wikipedia.org/wiki/Mikhail_Glinka</a></p>
-            <p>"Orientalism." Wikipedia: The Free Encyclopedia. Wikimedia Foundation, Inc. 25 June 2017. Web. 1 Jul. 2017., <a href = "https://en.wikipedia.org/wiki/Orientalism">en.wikipedia.org/wiki/Orientalism</a></p>
-        </div>
-    </div>
+
+    <!-- JavaScript link -->
+	<script src="assets/js/main.js"></script>
+
 </body>
 
 <footer>

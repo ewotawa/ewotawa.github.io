@@ -3,8 +3,12 @@
         color: gray;
     }
 
-    .blackFont{
+    .blackFont {
         color: black;
+    }
+
+    .blackBorder {
+        border: 1px solid black;
     }
 
 /* Styles for navigation row */
@@ -47,6 +51,42 @@
         height: auto;
     }
 
+    .shrinkImage {
+        max-width: 80%;
+        height: auto;
+    }
+
     .foot-padding {
         padding-bottom: 70px;
     }
+
+/* Center image */
+
+    .centerImage {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+/* text */ 
+
+h1, h2, h3, h4, h5 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+p, li, ul, ol, small {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* background gradient */
+
+.grad {
+    background: lightgray; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(lightgray, beige); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(lightgray, beige); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(lightgray, beige); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(lightgray, beige); /* Standard syntax */
+    border-radius: 25px;
+    border: 1px solid darkslategray;
+    padding: 25px;
+}

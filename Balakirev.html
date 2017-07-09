@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="./jquery.matchHeight.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
       
     <!--Style required for carousel slide animation-->
@@ -20,25 +19,6 @@
 
     <!--Individual Stylesheet-->
     <link rel="stylesheet" href="assets/stylesheet/main.css">
-
-    <!--Scripts-->
-    <script>
-        $(document).ready(function(){
-            adjustTop();
-
-            $(window).resize(function(){
-                adjustTop();
-            });
-
-        });
-
-        function adjustTop() {
-                var height = $('.main-nav').height();
-                $('.main-wrapper').css({'top' : height + 'px'});
-        }    
-
-    </script>
-
 
 </head>
 
@@ -88,21 +68,25 @@
 
     <div class="row main-wrapper">
         <div class="col-md-12">
-            <h1 class="text-center">Mily Balakirev</h1>
+            <img class="centerImage" src="assets/images/balakirev.png" width=80%>
+            <h1 class="text-center">Mily Alexeyevich Balakirev</h1>
             <h3 class="text-center">1837-1910</h3>
         </div>
     </div>
 
     <div class="row main-wrapper">
-        <div class="col-md-3 col-md-offset-1">
-            <p><a href="https://commons.wikimedia.org/wiki/File:Milij_Aleksejevi%C4%8D_Balakirev_(%D0%9C%D0%B8%D0%BB%D0%B8%D0%B9_%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B5%D0%B5%D0%B2%D0%B8%D1%87_%D0%91%D0%B0%D0%BB%D0%B0%CC%81%D0%BA%D0%B8%D1%80%D0%B5%D0%B2).jpg#/media/File:Milij_Aleksejevi%C4%8D_Balakirev_(%D0%9C%D0%B8%D0%BB%D0%B8%D0%B9_%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B5%D0%B5%D0%B2%D0%B8%D1%87_%D0%91%D0%B0%D0%BB%D0%B0%CC%81%D0%BA%D0%B8%D1%80%D0%B5%D0%B2).jpg"><img src="https://upload.wikimedia.org/wikipedia/commons/1/1c/Milij_Aleksejevi%C4%8D_Balakirev_%28%D0%9C%D0%B8%D0%BB%D0%B8%D0%B9_%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B5%D0%B5%D0%B2%D0%B8%D1%87_%D0%91%D0%B0%D0%BB%D0%B0%CC%81%D0%BA%D0%B8%D1%80%D0%B5%D0%B2%29.jpg" class="img-fluid dynamicImage img-thumbnail" alt="Milij Aleksejevič Balakirev (Милий Алексеевич Бала́кирев).jpg"></a><br><small>By <span xml:lang="en" lang="en">Unknown</span><a href="https://www.wikidata.org/wiki/Q4233718" title="wikidata:Q4233718"></a> - <a rel="nofollow" class="external free" href="http://pianosociety.com/cms/index.php?section=26">http://pianosociety.com/cms/index.php?section=26</a>, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=2049847">Link</a></small></p>
-        </div>
-        <div class="col-md-7">
-            <h3 class="text-center">Making the Mighty Five</h3>
-            <br>
-            <p>Mily Balakirev studied piano as a child, first from his mother and later while a student at the Nizhny Novgorod Gymnasium, Alexandrovsky Institute, and University of Kazan.</p>
-            <p>Balakirev met composer Mikhail Glinka in St. Petersburg in 1855. Glinka encouraged him to pursue a career in music. From Glinka he gained a passion for Russian nationalism in his music.</p>
-            <p>Balakirev is responsible for gathering the composers who would come to be known as The Mighty Five: Modest Mussorgsky in 1858, Nikolai RImsky-Korsakov in 1861, and Alexander Borodin in 1862. </p>
+        <div class="container col-md-10 col-md-offset-1 grad">
+            <div class="col-md-4 text-center">
+                <p><a href="https://commons.wikimedia.org/wiki/File:Milij_Aleksejevi%C4%8D_Balakirev_(%D0%9C%D0%B8%D0%BB%D0%B8%D0%B9_%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B5%D0%B5%D0%B2%D0%B8%D1%87_%D0%91%D0%B0%D0%BB%D0%B0%CC%81%D0%BA%D0%B8%D1%80%D0%B5%D0%B2).jpg#/media/File:Milij_Aleksejevi%C4%8D_Balakirev_(%D0%9C%D0%B8%D0%BB%D0%B8%D0%B9_%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B5%D0%B5%D0%B2%D0%B8%D1%87_%D0%91%D0%B0%D0%BB%D0%B0%CC%81%D0%BA%D0%B8%D1%80%D0%B5%D0%B2).jpg"><img src="https://upload.wikimedia.org/wikipedia/commons/1/1c/Milij_Aleksejevi%C4%8D_Balakirev_%28%D0%9C%D0%B8%D0%BB%D0%B8%D0%B9_%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B5%D0%B5%D0%B2%D0%B8%D1%87_%D0%91%D0%B0%D0%BB%D0%B0%CC%81%D0%BA%D0%B8%D1%80%D0%B5%D0%B2%29.jpg" class="img-fluid shrinkImage img-thumbnail" alt="Milij Aleksejevič Balakirev (Милий Алексеевич Бала́кирев).jpg"></a><br><strong>Mily Balakirev</strong></p>
+                <p><small>By <span xml:lang="en" lang="en">Unknown</span><a href="https://www.wikidata.org/wiki/Q4233718" title="wikidata:Q4233718"></a> - <a rel="nofollow" class="external free" href="http://pianosociety.com/cms/index.php?section=26">http://pianosociety.com/cms/index.php?section=26</a>, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=2049847">Link</a></small></p>
+            </div>
+            <div class="col-md-8">
+                <h3 class="text-center">Making the Mighty Five</h3>
+                <br>
+                <p>Mily Balakirev studied piano as a child, first from his mother and later while a student at the Nizhny Novgorod Gymnasium, Alexandrovsky Institute, and University of Kazan.</p>
+                <p>Balakirev met composer Mikhail Glinka in St. Petersburg in 1855. Glinka encouraged him to pursue a career in music. From Glinka he gained a passion for Russian nationalism in his music.</p>
+                <p>Balakirev is responsible for gathering the composers who would come to be known as The Mighty Five: Modest Mussorgsky in 1858, Nikolai RImsky-Korsakov in 1861, and Alexander Borodin in 1862. </p>
+            </div>
         </div>
     </div>
 
@@ -124,22 +108,30 @@
             <h4>Tamara (1867-1882)</h4>
             <p><i>Tamara</i> is a symphonic poem that also mirrors the orientalist style. The piece is considered to be some of Balakirev's best work. <i>Tamara</i> was inspired by Mikhail Lermontov's poetry; the poem tells the story of a seductress who draws in travelers to her tower at the gorge of Daryal. After a night of pleasure, the traveler's body is found dead, floating in the River Terek.</p>
             <p><a href="https://youtu.be/vML54IrlhYU">Click here </a> to listen to a performance of <i>Tamara</i>.</p>
+            <br>
         </div>
     </div>
 
-    <div class="row main-wrapper">    
-        <div class="col-md-10 col-md-offset-1">
-            <h3 class="text-center">References and Additional Reading</h3>
-        </div>
-    </div>
 
     <div class="row main-wrapper">
         <div class="col-md-10 col-md-offset-1">
-            <p>"Mily Balakirev." Wikipedia: The Free Encyclopedia. Wikimedia Foundation, Inc. 28 May 2017. Web. 3 Jul. 2017., <a href = "https://en.wikipedia.org/wiki/Mily_Balakirev">en.wikipedia.org/wiki/Mily_Balakirev</a></p>
-            <p>"List of compositions by Mily Balakirev." Wikipedia: The Free Encyclopedia. Wikimedia Foundation, Inc. 28 Dec. 2016. Web. 3 Jul. 2017., <a href = "https://en.wikipedia.org/wiki/List_of_compositions_by_Mily_Balakirev">en.wikipedia.org/wiki/List_of_compositions_by_Mily_Balakirev</a></p>
+            <div class="panel panel-default">
+                <div onclick="panelToggle()" class="panel-heading">
+                    <div class="panel-title text-center">
+                    <h4>References and Additional Reading</h4>
+                    <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+                    </div>
+                </div>
+                <div id="myPanelBody"class="panel-body">
+                    <p>"Mily Balakirev." Wikipedia: The Free Encyclopedia. Wikimedia Foundation, Inc. 28 May 2017. Web. 3 Jul. 2017., <a href = "https://en.wikipedia.org/wiki/Mily_Balakirev">en.wikipedia.org/wiki/Mily_Balakirev</a></p>
+                    <p>"List of compositions by Mily Balakirev." Wikipedia: The Free Encyclopedia. Wikimedia Foundation, Inc. 28 Dec. 2016. Web. 3 Jul. 2017., <a href = "https://en.wikipedia.org/wiki/List_of_compositions_by_Mily_Balakirev">en.wikipedia.org/wiki/List_of_compositions_by_Mily_Balakirev</a></p>
+                </div>
+            </div>
         </div>
     </div>
 
+    <!-- JavaScript link -->
+	<script src="assets/js/main.js"></script>
 
 
     

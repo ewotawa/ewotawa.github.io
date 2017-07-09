@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="./jquery.matchHeight.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
       
     <!--Style required for carousel slide animation-->
@@ -20,25 +19,6 @@
 
     <!--Individual Stylesheet-->
     <link rel="stylesheet" href="assets/stylesheet/main.css">
-
-    <!--Scripts-->
-    <script>
-        $(document).ready(function(){
-            adjustTop();
-
-            $(window).resize(function(){
-                adjustTop();
-            });
-
-        });
-
-        function adjustTop() {
-                var height = $('.main-nav').height();
-                $('.main-wrapper').css({'top' : height + 'px'});
-        }    
-
-    </script>
-
 
 </head>
 
@@ -88,22 +68,26 @@
 
     <div class="row main-wrapper">
         <div class="col-md-12">
-            <h1 class="text-center">Alexander Borodin</h1>
+            <img class="centerImage" src="assets/images/borodin.png" width=80%>
+            <h1 class="text-center">Alexander Porfiryevich Borodin</h1>
             <h3 class="text-center">1833-1887</h3>
         </div>
     </div>
 
     <div class="row main-wrapper">
-        <div class="col-md-3 col-md-offset-1">
-            <p><a href="https://commons.wikimedia.org/wiki/File:Borodin.jpg#/media/File:Borodin.jpg"><img src="https://upload.wikimedia.org/wikipedia/commons/7/70/Borodin.jpg" class="img-fluid dynamicImage img-thumbnail" alt="Borodin.jpg"></a><br><small>By <a rel="nofollow" class="external text" href="http://blakedynasty.typepad.com/.a/6a0120a6ef4079970b01310f69b339970c-800wi">blakedynasty.typepad.com</a>, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=894648">Link</a></small></p>
-        </div>
-        <div class="col-md-7">
-            <h3 class="text-center">Making the Mighty Five</h3>
-            <br>
-            <p>Alexander Borodin was a doctor and a chemist who pursued music as an avocation. In addition to his work in musical composition, he also studied the cello.</p>
-            <p>Borodin studied composition with Mily Balakirev, starting in 1862. During this time he composed his first symphony, which premiered in 1869 with Balakirev as conductor. </p>
-            <p>Modest Mussorgsky and Borodin first met in 1856 when both were stationed at a military hospital in St. Petersburg, Russia. </p>
-            <p>Alexander Borodin died suddenly duing a ball at the Imperial Medical-Surgical Academy, where he conducted research and lectured. Consequently, he left a number of his musical works unfinished. Rimsky-Korsakov, working with fellow musician Alexander Glazunov, completed Borodin's opera <i>Prince Igor</i>.</p>
+        <div class="container col-md-10 col-md-offset-1 grad">
+            <div class="col-md-4 text-center">
+                <p><a href="https://commons.wikimedia.org/wiki/File:Borodin.jpg#/media/File:Borodin.jpg"><img src="https://upload.wikimedia.org/wikipedia/commons/7/70/Borodin.jpg" class="img-fluid shrinkImage img-thumbnail" alt="Borodin.jpg"></a><br><strong>Alexander Borodin</strong></p>
+                <p><small>By <a rel="nofollow" class="external text" href="http://blakedynasty.typepad.com/.a/6a0120a6ef4079970b01310f69b339970c-800wi">blakedynasty.typepad.com</a>, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=894648">Link</a></small></p>
+            </div>
+            <div class="col-md-8">
+                <h3 class="text-center">Making the Mighty Five</h3>
+                <br>
+                <p>Alexander Borodin was a doctor and a chemist who pursued music as an avocation. In addition to his work in musical composition, he also studied the cello.</p>
+                <p>Borodin studied composition with Mily Balakirev, starting in 1862. During this time he composed his first symphony, which premiered in 1869 with Balakirev as conductor. </p>
+                <p>Modest Mussorgsky and Borodin first met in 1856 when both were stationed at a military hospital in St. Petersburg, Russia. </p>
+                <p>Alexander Borodin died suddenly duing a ball at the Imperial Medical-Surgical Academy, where he conducted research and lectured. Consequently, he left a number of his musical works unfinished. Rimsky-Korsakov, working with fellow musician Alexander Glazunov, completed Borodin's opera <i>Prince Igor</i>.</p>
+            </div>
         </div>
     </div>
 
@@ -136,24 +120,35 @@
             <p>Melodies from <i>Prince Igor</i> also found their way into the musical <i>Kismet</i>. "Stranger in Paradise", for example, sources its melody from one of the opera's <i>Polovtsian Dances</i>, the <i>Gliding Dance of the Maidens</i>.</p>
             <p><a href="https://youtu.be/QWU1uj9WmOM">Click here</a> to listen to a performance of the <i>Polovtsian Dances</i> from <i>Prince Igor</i>.</p>
             <p><a href="https://youtu.be/P0c3od7KynE">Click here </a> to listen to a performance of "Stranger in Paradise" from <i>Kismet</i>.</p>
+            <br>
         </div>
     </div>
 
-    <div class="row main-wrapper">    
-        <div class="col-md-10 col-md-offset-1">
-            <h3 class="text-center">References and Additional Reading</h3>
-        </div>
-    </div>
+
 
     <div class="row main-wrapper">
         <div class="col-md-10 col-md-offset-1">
-            <p>"Alexander Borodin." Wikipedia: The Free Encyclopedia. Wikimedia Foundation, Inc. 30 May 2017. Web. 3 Jul. 2017., <a href = "https://en.wikipedia.org/wiki/Alexander_Borodin">en.wikipedia.org/wiki/Alexander_Borodin</a></p>
-            <p>"<i>In the Steppes of Central Asia</i>." Wikipedia: The Free Encyclopedia. Wikimedia Foundation, Inc. 26 Jan. 2017. Web. 3 Jul. 2017., <a href = "https://en.wikipedia.org/wiki/In_the_Steppes_of_Central_Asia">en.wikipedia.org/wiki/In_the_Steppes_of_Central_Asia</a></p>
-            <p>"List of compositions by Alexander Borodin." Wikipedia: The Free Encyclopedia. Wikimedia Foundation, Inc. 23 Jun. 2017. Web. 3 Jul. 2017., <a href = "https://en.wikipedia.org/wiki/List_of_compositions_by_Alexander_Borodin">en.wikipedia.org/wiki/List_of_compositions_by_Alexander_Borodin</a></p>
-            <p>"Polovtsian Dances." Wikipedia: The Free Encyclopedia. Wikimedia Foundation, Inc. 24 Jun. 2017. Web. 3 Jul. 2017., <a href = "https://en.wikipedia.org/wiki/Polovtsian_Dances">en.wikipedia.org/wiki/Polovtsian_Dances</a></p>
-            <p>"<i>Prince Igor</i>." Wikipedia: The Free Encyclopedia. Wikimedia Foundation, Inc. 3 Jul. 2017. Web. 3 Jul. 2017., <a href = "https://en.wikipedia.org/wiki/Prince_Igor">en.wikipedia.org/wiki/Prince_Igor</a></p>
+            <div class="panel panel-default">
+                <div onclick="panelToggle()" class="panel-heading">
+                    <div class="panel-title text-center">
+                    <h4>References and Additional Reading</h4>
+                    <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+                    </div>
+                </div>
+                <div id="myPanelBody"class="panel-body">
+                    <p>"Alexander Borodin." Wikipedia: The Free Encyclopedia. Wikimedia Foundation, Inc. 30 May 2017. Web. 3 Jul. 2017., <a href = "https://en.wikipedia.org/wiki/Alexander_Borodin">en.wikipedia.org/wiki/Alexander_Borodin</a></p>
+                    <p>"<i>In the Steppes of Central Asia</i>." Wikipedia: The Free Encyclopedia. Wikimedia Foundation, Inc. 26 Jan. 2017. Web. 3 Jul. 2017., <a href = "https://en.wikipedia.org/wiki/In_the_Steppes_of_Central_Asia">en.wikipedia.org/wiki/In_the_Steppes_of_Central_Asia</a></p>
+                    <p>"List of compositions by Alexander Borodin." Wikipedia: The Free Encyclopedia. Wikimedia Foundation, Inc. 23 Jun. 2017. Web. 3 Jul. 2017., <a href = "https://en.wikipedia.org/wiki/List_of_compositions_by_Alexander_Borodin">en.wikipedia.org/wiki/List_of_compositions_by_Alexander_Borodin</a></p>
+                    <p>"Polovtsian Dances." Wikipedia: The Free Encyclopedia. Wikimedia Foundation, Inc. 24 Jun. 2017. Web. 3 Jul. 2017., <a href = "https://en.wikipedia.org/wiki/Polovtsian_Dances">en.wikipedia.org/wiki/Polovtsian_Dances</a></p>
+                    <p>"<i>Prince Igor</i>." Wikipedia: The Free Encyclopedia. Wikimedia Foundation, Inc. 3 Jul. 2017. Web. 3 Jul. 2017., <a href = "https://en.wikipedia.org/wiki/Prince_Igor">en.wikipedia.org/wiki/Prince_Igor</a></p>
+                </div>
+            </div>
         </div>
     </div>
+
+
+    <!-- JavaScript link -->
+	<script src="assets/js/main.js"></script>
 
 
 
