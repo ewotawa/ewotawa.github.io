@@ -11,11 +11,6 @@
         border: 1px solid black;
     }
 
-    .cyrillicFont {
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        color: darkslategray;
-    }
-
 /* Styles for navigation row */
     .pageTitle{
         background-color: white;
@@ -44,7 +39,7 @@
         color: black;
     }
 
-     .main-wrapper {
+    .main-wrapper {
         margin: 1%;
         position: relative;
     }    
@@ -87,12 +82,22 @@ p, li, ul, ol, small {
 /* background gradient */
 
 .grad {
-    background: lightgray; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(lightgray, beige); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(lightgray, beige); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(lightgray, beige); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(lightgray, beige); /* Standard syntax */
+    background: lightsteelblue; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(lightsteelblue, lightgray); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(lightsteelblue, lightgray); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(lightsteelblue, lightgray); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(lightsteelblue, lightgray); /* Standard syntax */
     border-radius: 25px;
-    border: 1px solid darkslategray;
-    padding: 25px;
+    border: 1px solid black;
+    padding: 2%;
+}
+
+.black-and-white {
+    background: black;
+    padding: 10px;
+    color: white;
+}
+
+.header-label {
+    border-bottom: 1px solid darkslateblue;
 }
